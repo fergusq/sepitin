@@ -1,0 +1,3 @@
+Gervás, Pablo, et al. "Story plot generation based on CBR." International Conference on Innovative Techniques and Applications of Artificial Intelligence. Springer, London, 2004.
+
+Grasbon, Dieter, and Norbert Braun. "A morphological approach to interactive storytelling." Proc. CAST01, Living in Mixed Realities. Special issue of Netzspannung. org/journal, the Magazine for Media Production and Inter-media Research. 2001.
