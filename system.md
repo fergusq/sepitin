@@ -11,6 +11,30 @@ These two steps are somewhat separate, so we will describe them individually.
 
 ## Plot generation
 
+### Initial idea
+
+The initial idea for generating story plots is to model them as trees of story actions. A story action is a predefined event that takes place between two actors (i.e. the characters of the story), such as ```A is_upstaged_by B``` where A and B are the actors. Tony Veale has made a [large database](https://github.com/prosecconetwork/Scealextric/blob/master/Veale's%20action%20pairs.xlsx) of story actions we can utilize for this. Our trees could be something like this:
+
+![tree1](system_kuvat/graphviz1.png)
+
+Here the root node has a preceding and a succeeding node, which are taken from the defined possible story actions. The idea is that we could 'deepen' the tree by generating more nodes to expand the story like this:
+
+![tree2](system_kuvat/graphviz2.png)
+
+This tree would be traversed inorder and thus producing a chain of events, which would be the final plot sequence.
+
+![seq](system_kuvat/graphviz3.png)
+
+### Other concerns
+
+It is clear that the initial idea isn't enough by itself. The plot actions always include two characters, and if we were to just generate a tree as shown we would always only have two characters in our story. One way to solve this could be to define some plot actions to make new characters to the tree when 'deepening' the tree, for example ```A kills B``` could be defined to have a possible 'deepening' outcome of ```A hires C``` & ```C kills B```.
+
+Another problem is that just randomly generating more actions based on possible defined outcomes can lead to uncharacteristic actions. We have thought about defining different character archetypes that would have different probablity distributions when determining ways to resolve actions (i. e. deepening the tree). Separate charater generation and/or template definition is something we are interested in but have not yet planned out.
+
+### A word on evaluation
+
+We'd like to have an evaluation function for plots. We could perhaps evaluate how dramatic plots are based on which actions it contains. Another function could take a look at how many characters are in the story and how much they interact with each other, aiming to make the stories have less irrelevant side characters. Plot evaluation is something we have only theorized about yet, but we'll probably implement many evaluation functions and make the final evaluation score a linear combination of all the sensible functions.
+
 ## Natural language generation
 
 After generating the story actions, we first translate them to an initial natural language representation using a template-based system. There is a human-written template for each story action into details like character names are inserted. This will result in a natural languge skeleton of the story.
