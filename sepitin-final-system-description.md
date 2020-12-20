@@ -1,6 +1,8 @@
 ## SEPITIN system description
 
-Iikka Hauhio & Petrus Peltola
+<sup>*Iikka Hauhio & Petrus Peltola*</sup>
+
+* * *
 
 The project consists of two mostly independent parts: the plot generator and the neaural net. The plot generator was meant to act as a propmt generator for the neural network, but in the current version the neural net does not adapt to the given prompts very well, making the plot generator quite redundant.
 
@@ -12,9 +14,9 @@ The plot generator, called Juono, was meant to generate story plots in Finnish u
 
 Plotto consists of about fifteen hundred story actions, which look something like this: 
 
-![action1](system_kuvat/action1.png)
+![](system_kuvat/action1.png) \
 
-![action2](system_kuvat/action2.png)
+![](system_kuvat/action2.png) \
 
 The actions consist of an ID, possible sub-IDs, the action description and links to possible lead-in and carry-on actions. These links can have many possible modifications to the linked action, the most common ones being changing or transposing actors (the *ch* and *tr* notations) and selecting only some parts of the description (the *\*-\*\** notation). Juono also supports the multi-part action chain links, where a link consists of multiple sequential actions separated by a semicolon.
 
@@ -22,7 +24,7 @@ How Plotto, and thus Juono, builds plots from these actions is by selecting a mi
 
 #### The state of Juono
 
-The current version of Juono is far from perfect, in fact some plot actions and action links are either parsed wrong or expressed in an inconsistent manner. The latter stems from plotto being old (written int the 1920s!) and made for human readers, while the former is just unpolished code. Juono is not as good as it could be due to time constraints and it's incompability with the surface realizing neural net. In the current version there are a few Finnish actions included, but as soon as we tested using them as prompts for the net we saw that this approach wouldn't work with the current version of the neural net. You of course can (and should!) try out the few Finnish actions as prompts for the neural net to see the results for yourself. If you want to see original Plotto english actions just change the line 6 constant to False.
+The current version of Juono is far from perfect, in fact some plot actions and action links are either parsed wrong or expressed in an inconsistent manner. The latter stems from plotto being old (written int the 1920s!) and made for human readers, while the former is just unpolished code. Juono is not as good as it could be due to time constraints and it's incompability with the surface reali'zing neural net. In the current version there are a few Finnish actions included, but as soon as we tested using them as prompts for the net we saw that this approach wouldn't work with the current version of the neural net. You of course can (and should!) try out the few Finnish actions as prompts for the neural net to see the results for yourself. If you want to see original Plotto english actions just change the line 6 constant to False.
 
 ### Language model
 
