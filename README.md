@@ -39,10 +39,21 @@ Modifying the script to your needs should be simple enough, I hope the comments 
 
 6. Run `python predict.py sp-aooo-10k txl,1,aooo`
 
-7. Now you can give some parameters, I'd suggest
+7. Now you can give some parameters, I'd suggest:
   * A token limit of 400: `/n 400`
   * A repetition penalty of 0.8: `/repe 0.8`
 
-8. This will be expanded soon
+8. Give a prompt, for example: `Draco oli suunitellut tätä koko loman ajan, ja tänään hän aikoi tehdä sen. Hän aikoi nolata Harryn Ginnyn ja kaikkien muiden edessä totaalisesti. br "Tiedätkös, minusta sinun ei kannattaisi luulla liikoja itsestäsi", Draco naurahti Harrylle.` Use `br` for line breaks. `xxbos` is a special character that signifies the beginning of a new story.
+
+### Using the dialogue generator
+
+1. Do steps 1 to 5 of the above instructions
+
+2. Install the Festival Speech Synthesis System
+
+3. Install the Finnish voice packs *hy_fi_mv_diphone* and *suo_fi_lj_diphone*, `apt install festvox-suopuhe-{lj,mv}` should do the trick
+
+4. Run the script and give it some dialogue to begin, for example: `perl6 aooodialogi.p6 'Draco naurahti Harrylle: "Tiedätkös, minusta sinun ei kannattaisi luulla liikoja itsestäsi" br Harry kavahti: "Hah, mitä tarkoitat? Sitä paitsi sinun on turha väittää muita ylimielisiksi, Draco" br Draco sanoi: "Ginny ei kuitenkaan tahdo olla tanssiparisi, nolaat vain itsesi"'`
+
 
 
