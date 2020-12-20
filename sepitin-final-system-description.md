@@ -1,5 +1,6 @@
 ## SEPITIN system description
 
+Iikka Hauhio & Petrus Peltola
 
 The project consists of two mostly independent parts: the plot generator and the neaural net. The plot generator was meant to act as a propmt generator for the neural network, but in the current version the neural net does not adapt to the given prompts very well, making the plot generator quite redundant.
 
