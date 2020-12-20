@@ -11,7 +11,7 @@ Surface realizer can be found in directory *harry*, plot generator in *juono* an
 
 ### Using Juono
 
-Running juono is quite straightforward:
+Running Juono is quite straightforward:
 
 1. Clone the repo and navigate to the *juono* folder
 
@@ -40,8 +40,8 @@ Modifying the script to your needs should be simple enough, I hope the comments 
 6. Run `python predict.py sp-aooo-10k txl,1,aooo`
 
 7. Now you can give some parameters, I'd suggest:
-  * A token limit of 400: `/n 400`
-  * A repetition penalty of 0.8: `/repe 0.8`
+   * A token limit of 400: `/n 400`
+   * A repetition penalty of 0.8: `/repe 0.8`
 
 8. Give a prompt, for example: `Draco oli suunitellut tätä koko loman ajan, ja tänään hän aikoi tehdä sen. Hän aikoi nolata Harryn Ginnyn ja kaikkien muiden edessä totaalisesti. br "Tiedätkös, minusta sinun ei kannattaisi luulla liikoja itsestäsi", Draco naurahti Harrylle.` Use `br` for line breaks. `xxbos` is a special character that signifies the beginning of a new story. If you want a new story with no given prompt you can just type `xxbos`
 
@@ -49,7 +49,7 @@ Modifying the script to your needs should be simple enough, I hope the comments 
 
 1. Do steps 1 to 5 of the above instructions
 
-2. Install the Festival Speech Synthesis System
+2. Install the Festival Speech Synthesis System, `apt install festival` if you use apt
 
 3. Install the Finnish voice packs *hy_fi_mv_diphone* and *suo_fi_lj_diphone*, `apt install festvox-suopuhe-{lj,mv}` should do the trick
 
