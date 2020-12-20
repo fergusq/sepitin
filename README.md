@@ -29,7 +29,7 @@ Modifying the script to your needs should be simple enough, I hope the comments 
 
 1. Clone the repo and navigate to the *harry* folder
 
-2. Download (too large for github, ~420MB) the trained model *aooo.pth* and place it in the *harry/models* folder
+2. [Download](https://dropper.link/stream/-2MV4W4.pth) (too large for github, ~420MB) the trained model *aooo.pth* and place it in the *harry/models* folder
 
 3. Create the virtual environment: `python -m venv venv`
 
@@ -43,7 +43,7 @@ Modifying the script to your needs should be simple enough, I hope the comments 
   * A token limit of 400: `/n 400`
   * A repetition penalty of 0.8: `/repe 0.8`
 
-8. Give a prompt, for example: `Draco oli suunitellut tätä koko loman ajan, ja tänään hän aikoi tehdä sen. Hän aikoi nolata Harryn Ginnyn ja kaikkien muiden edessä totaalisesti. br "Tiedätkös, minusta sinun ei kannattaisi luulla liikoja itsestäsi", Draco naurahti Harrylle.` Use `br` for line breaks. `xxbos` is a special character that signifies the beginning of a new story.
+8. Give a prompt, for example: `Draco oli suunitellut tätä koko loman ajan, ja tänään hän aikoi tehdä sen. Hän aikoi nolata Harryn Ginnyn ja kaikkien muiden edessä totaalisesti. br "Tiedätkös, minusta sinun ei kannattaisi luulla liikoja itsestäsi", Draco naurahti Harrylle.` Use `br` for line breaks. `xxbos` is a special character that signifies the beginning of a new story. If you want a new stroy with no given prompt you can just type `xxbos`
 
 ### Using the dialogue generator
 
